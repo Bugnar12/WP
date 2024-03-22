@@ -1,0 +1,3 @@
+7. Write a web page with a transparrent div in the center containing various text/information. The transparrent div should have round corners. When the mouse is over the div, the div should have right corners.
+
+20. Write a web page which contains a menu with five text items stacked vertically, one on top of each other. In the beginning all text items are blurred. When the mouse is over an item, it grows larger and becomes clear (unblurred) so that it is emphasized with respect to the other items.
