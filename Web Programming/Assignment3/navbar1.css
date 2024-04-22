@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    font-family: Calibri ;
+    background-color: rgb(228, 228, 228);
+    position: relative;
+}
+
+.navbar1-main{
+    display:flex; /*flex => child elements are arranged in a row*/
+    /*background-color: #232F3E;*/
+    background-color: rgb(21, 21, 21);
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+.navbar1-logo{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 18px;
+    margin-top: 12px;
+}
+.navbar1-element2{
+    color: lightgrey;
+    font-size:14px;
+    opacity: 0.8;
+    text-align: center;
+    align-items: center;
+    margin-right: 32px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 0.9;
+}
+.navbar1-element2_2{
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: -0.4px;
+}
+.location-style{
+    display:flex;
+}
+.navbar1-select-search {
+    display: flex;
+    align-items: stretch; /* This will make the select and input have the same height */    
+}
+
+.navbar1-select{
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    text-decoration: none;
+    background-color: lightgrey;
+    padding-right: 5px;
+    width: 58px;
+    font-size: 12px;
+}
+
+.navbar1-select:active, .navbar1-select:focus{
+    border-color: orange;
+    border-width: medium;
+    outline: none;
+}
+
+.navbar1-select-search:focus-within {
+    border: medium solid orange;
+}
+
+.navbar1-search{
+    display: inline-block;
+    border: none;
+    width: 1050px;
+}
+
+.navbar1-search:active, .navbar1-search:focus{
+    border: none;
+    outline: none;
+}
+
+.navbar1-search-button{
+    border: none;
+    background-color: rgb(244, 182, 68);
+    height: 40px;
+    width: 46px;
+    padding: 0; 
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.navbar1-search-button img{
+    mix-blend-mode: multiply;
+    height: 27px;
+    width: 27px;
+    margin: auto;
+    background: none;
+    border:none;
+}
+
+.navbar1-tools{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown{
+    position: relative;
+    margin-left: 35px;
+    align-items: flex;
+}
+.dropdown a {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.dropdown:hover{
+    border: 2px solid white;
+    border-color: white;
+    padding: 2px;
+}
+
+.dropdown .arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgb(186, 186, 186);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.dropdown-text{
+    margin-left: 24px;
+    color: white;
+    line-height: 0.9;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dropdown-text:hover{
+    border: 2px solid white;
+    padding: 4px;
+}
+
+.dropdown-text-below{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dropdown-text .arrow{
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgb(186, 186, 186); 
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.tools-3{
+    margin-left: 24px;
+    color: white;
+    line-height: 0.9;
+    font-size: 14px;
+    cursor: pointer;
+}
+.tools-3-below{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.basket-style{
+    margin-left: 24px;
+    margin-right: 12px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.basket-text{
+    color: white;
+    
+}

@@ -1,0 +1,47 @@
+.carousel {
+    width: 1600px;
+    max-width: 100%;
+    height: 600px; 
+    margin-left: 110px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 2em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.carousel-button-left {
+    left: 10px;
+}
+
+.carousel-button-right {
+    right: 10px;
+}
+.carousel-images {
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 0%, transparent 50%, white 100%); /* Creates "fading" effect" */
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+}

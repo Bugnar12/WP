@@ -1,0 +1,86 @@
+body{
+    font-family: "Helvetica", Sans-Serif, serif;
+    background-image: url("https://t3.ftcdn.net/jpg/03/99/09/66/360_F_399096694_rI4J6yHpEaijvG36k8ybRFrqKpKp6pOn.jpg");
+}
+
+.wrapper-div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div{
+    display: flex;
+    border: 2px solid white;
+    padding: 20px;
+    width: 30%;
+    height: 100px;
+    z-index: 1;
+}
+
+.secondary-div{
+    width: 30%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.button1{
+    align-content: center;
+    margin: 0 0.6em 0.6em 0;
+    height: 29px;
+    width: 180px;
+    border-radius: 2em;
+    border: 2px solid black;
+    font-weight: bold;
+    font-family: Ariel, sans-serif;
+    font-size: 15px;
+    color: black;
+    background-color: #aeb5f6;
+    text-align: center;
+    align-self: center;
+    transition: background-color 0.3s;
+}
+
+.button2{
+    align-content: center;
+    margin: 0 0.6em 0.6em 0;
+    height: 29px;
+    width: 180px;
+    border-radius: 2em;
+    border: 2px solid black;
+    font-weight: bold;
+    font-family: Ariel, sans-serif;
+    font-size: 15px;
+    color: black;
+    background-color: #aeb5f6;
+    text-align: center;
+    align-self: center;
+    transition: background-color 0.3s;
+}
+
+.anchor-style{
+    padding: 0.2em 0.6em;
+    margin: 0 0.2em 0.2em 0;
+    border-radius: 1em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: bold;
+    color: mediumpurple;
+    font-family: Ariel, sans-serif;
+    text-align: center;
+}
+
+.anchor-style-changed{
+    border-radius:50px;
+    border:1px solid white;
+    width:100px;
+    height:100px;
+    color: red;
+    text-align: center;
+    align-content: center;
+}
