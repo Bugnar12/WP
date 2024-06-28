@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Update File</h1>
+  <p><b>Please fill this form and submit to update the file from the database.</b></p>
+
+  <div class="formWrapper" *ngIf="dataLoaded">
+    <input type="text" name="title" placeholder="Title:" [(ngModel)]="title" required> <br>
+    <input type="text" name="format_type" placeholder="Format Type:" [(ngModel)]="format_type" required> <br>
+    <input type="text" name="genre" placeholder="Genre:" [(ngModel)]="genre" required> <br>
+    <input type="text" name="path" placeholder="Path:" [(ngModel)]="path" required> <br>
+    <div class="button_container">
+      <button (click)="updateFile(title, format_type, genre, path)">Update File</button>
+      <button (click)="onCancel()">Cancel</button>
+    </div>
+  </div>
+</div>

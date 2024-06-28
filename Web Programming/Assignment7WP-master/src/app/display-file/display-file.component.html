@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="details">
+    <h1 class="header">Files</h1>
+    <button class="add" (click)="navigateToAdd()">
+      Add new file
+    </button>
+    <input type="text" name="genreFilter" placeholder="Filter by genre" [(ngModel)]="genreFilter" (ngModelChange)="filterByGenre()">
+  </div>
+  <table>
+    <tr>
+      <th> ID</th>
+      <th> TITLE</th>
+      <th> FORMAT TYPE</th>
+      <th> GENRE</th>
+      <th> PATH</th>
+      <th> ACTION</th>
+    </tr>
+    <tr *ngFor="let file of files">
+      <td>{{file.id}}</td>
+      <td>{{file.title}}</td>
+      <td>{{file.format_type}}</td>
+      <td>{{file.genre}}</td>
+      <td>{{file.path}}</td>
+      <td>
+        <br>
+        <button (click)="navigateToDelete(file.id)" id="deleteButton">Delete</button>
+        <button (click)="navigateToUpdate(file.id)" id="updateButton">Update</button>
+        <br>
+      </td>
+    </tr>
+  </table>
+</div>
