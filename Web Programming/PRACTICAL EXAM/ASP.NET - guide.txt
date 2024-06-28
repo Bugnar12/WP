@@ -1,0 +1,11 @@
+*project is already created*
+
+->For creating Controllers + Views for CRUD operations => Scaffolding
+
+->Authentication can be done automatically but if not, an example is on desktop and it is done using HttpSession...
+
+->TempData["user"] is used for transmitting data temporariliy between views ; equivalent to localstorage from PHP ; TempData.Keep() is also useful for persisting data after change
+
+->All work should be done in the HomeController and Views should be created based on the needs (just as in the example project)
+
+->To create a new view (in the Home directory of Views)=> empty Razor View

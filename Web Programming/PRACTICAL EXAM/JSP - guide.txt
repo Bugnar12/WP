@@ -1,0 +1,15 @@
+(template MUST be implemented)
+
+1.Model-Repository-Service-Controller pattern for each of the operations/entities
+
+2.HTTP => ONLY GET AND POST can be done. No PUT or DELETE operations
+
+3.Model + Repository are straight-forward ; in the repository manual queries can be implemented if something more complex is given
+
+4.Authentication (with roles too) can be done by implementing a users table and then checking for every .jsp page the if the user is logged in using session.setAttribute("user", user);
+	-check by using session.getAttribute("user) and check if it is null
+
+-> for every model use Lombok for easy entity, getter, setter, constructors
+-> also use @GeneratedValue(strategy = GenerationType.AUTO) - auto-incremented id
+
+5.For Controller use @GetMapping @PostMapping (can be used both for a single url) and ALL SHOULD RETURN A STRING that is the jsp page where the redirect must go.

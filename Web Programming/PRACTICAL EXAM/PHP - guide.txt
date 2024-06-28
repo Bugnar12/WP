@@ -1,0 +1,30 @@
+1. Configuration part : 
+
+-config.php :   parse the .env file and include the cors configuration
+		get the host, username, password, and db name from the .env file.
+		try to connect to the database and throw exception if not possible
+		
+-.env : store here DB_HOST, DB_USER, DB_PASSWORD, DB_NAME
+-cors.php : allow all origin, allow methods (get, post, put, delete, patch), allow headers : Content-Type
+
+
+2. Mandatory shared.js(process form data) + ajax.js files for AJAX calls (copy)
+
+3. CRUD operation(whatever is needed) in PHP on the format of the assignment.
+
+4. Implementation in JS and call <script> part in HTML to call the JS
+
+5. Rest of the operation are done just as above, but with a modified query, http request and whatever else is needed (ask copilot / chatgpt)
+
+6.Also problem can be solved in a .php file which will contain the server + the js calls and html with some styling also possible
+
+7.Login example in the sample; with user and $_SESSION being begined and ended after a user is logged in. 
+
+REMARKS:
+-errors can be seen in the xhr part at the response field(php errors + warnings)
+-pay attention to naming variables in DB and in the JS/PHP part(must correspond) 
+-ALWAYS set the id as auto increment (!!!)
+-ALWAYS USE THE localhost/ NOT THE ONE THAT ALSO HAS PORT EMBEDDED FROM THE WEBSTORM!!!
+-2x pay attention to DB names and also FIELD TYPES
+
+!!! DATABASE IS CONFIGURED ALREADY IN MYSQL !!!
